@@ -1,3 +1,59 @@
-.main-content{
+html, body{
   height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12.5px 65px;
+}
+.header-title{
+  margin: 0;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+.header-link{
+  margin: 0;
+  text-decoration: none;
+  height: 20px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+.main-content{
+  height: 87.5vh;
+  background-image: url('coffee-1284041_1280.jpg');
+  background-size: cover;
+}
+.main-content p{
+  position: relative;
+  top: 30%;
+  width: 50%;
+  font-family: 'Neuton', serif;
+  font-size: 56px;
+  letter-spacing: 1.75px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  height: 12.5vh;
+  width: 100%;
+  background-color: #e2e2e2;
+}
+ul{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
 }
