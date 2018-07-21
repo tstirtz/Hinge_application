@@ -1,40 +1,46 @@
-html, body{
+html,
+body {
   height: 100vh;
   width: 100vw;
   margin: 0;
 }
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12.5px 65px;
 }
-.header-title{
+.header-title {
   margin: 0;
   color: white;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
 }
-.header-link{
+.header-link {
   margin: 0;
   text-decoration: none;
   height: 20px;
   color: white;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
-.header-link:hover{
+.header-link:hover {
   color: rgb(226, 226, 226);
 }
-.main-content{
-  height: 87.5vh;
-  background: linear-gradient(rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.3)), url('coffee-1284041_1280.jpg');
+.main-content {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(128, 128, 128, 0.3),
+      rgba(128, 128, 128, 0.3)
+    ),
+    url("./images/coffee-1284041_1280.jpg");
   background-size: cover;
 }
-.main-content p{
+.main-content p {
   position: relative;
   top: 30%;
-  width: 50%;
-  font-family: 'Times New Roman';
+  width: 90%;
+  font-family: "Times New Roman";
   font-size: 56px;
   letter-spacing: 1.75px;
   margin-left: auto;
@@ -44,20 +50,18 @@ html, body{
   text-align: center;
   color: white;
 }
-.app-store-container{
+.app-store-container {
   position: relative;
   top: 35%;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   text-align: center;
 }
-.app-store-img{
+.app-store-img {
   width: 100%;
   max-width: 200px;
   height: auto;
 }
-.footer{
+.footer {
   display: flex;
   align-items: center;
   position: absolute;
@@ -67,7 +71,7 @@ html, body{
   background-color: #e2e2e2;
   z-index: 2;
 }
-ul{
+ul {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -76,27 +80,27 @@ ul{
   list-style-type: none;
   padding: 0;
 }
-
-ul li{
+ul li {
   color: #bbbbbb;
   text-align: center;
 }
-li:nth-child(6){
-  font-family: 'Old Standard TT', serif;
+li:nth-child(6) {
+  font-family: "Old Standard TT", serif;
   font-weight: 700;
   letter-spacing: 0px;
   font-size: 13px;
   font-stretch: extra-condensed;
 }
-li:nth-child(4){
-  font-family: 'Roboto', sans-serif;
+li:nth-child(4) {
+  font-family: "Roboto", sans-serif;
 }
-li:nth-child(3), li:nth-child(5){
+li:nth-child(3),
+li:nth-child(5) {
   display: flex;
   align-items: center;
   font-size: 13px;
 }
-li:nth-child(3) img{
+li:nth-child(3) img {
   fill: #bbbbbb;
   width: 100%;
   max-width: 15px;
@@ -107,28 +111,161 @@ li:nth-child(3) img{
   font-family: oldEnglish;
   src: url(./canterbury/Canterbury.ttf);
 }
-
-li:nth-child(2){
-  font-family: 'Roboto', sans-serif;
+li:nth-child(2) {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 17px;
 }
-li:first-child{
+li:first-child {
   font-family: oldEnglish;
 }
-/* .container{
+.container {
   background-color: white;
   margin: 0;
   width: auto;
   position: relative;
   z-index: 2;
-} */
-.svg-line{
-  position: absolute; 
+}
+.svg-line {
+  position: absolute;
   width: 100%;
   left: 38%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   top: 0px;
   z-index: -3;
+}
+.col-lg {
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+.col-sm {
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-lg:nth-child(odd) {
+  justify-content: flex-end;
+}
+.col-sm h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 40px;
+}
+.col-sm p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.25px;
+  line-height: 30px;
+}
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 40vh;
+  background-color: #eee;
+  margin-top: 45px;
+}
+footer ul {
+  justify-content: center;
+}
+.footer-links li {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: black;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  color: grey;
+}
+@media only screen and (max-width: 660px) {
+  .svg-line {
+    visibility: hidden;
+  }
+  .col-lg {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .col-sm {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-lg:nth-child(odd) {
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main-content {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(128, 128, 128, 0.3),
+        rgba(128, 128, 128, 0.3)
+      ),
+      url("./images/coffee-1284041_1280.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .footer li:nth-child(5) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .footer li:nth-child(3) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main-content p {
+    position: relative;
+    top: 20%;
+    width: 95%;
+    font-family: "Times New Roman";
+    font-size: 46px;
+    letter-spacing: 1.75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+  }
+  .app-store-container {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+  }
+  .app-store-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  .footer li:nth-child(1) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .col-lg:nth-child(even) .col-sm {
+    width: 40%;
+  }
+  .col-lg:nth-child(odd) .col-sm {
+    width: 40%;
+  }
 }
