@@ -5,8 +5,9 @@ import (
 )
 
 func main() {
+	port := "8080"
 	http.Handle("/", http.FileServer(http.Dir("./static")))
-	if err := http.ListenAndServe(":8080", nil); err != nil {
-    panic(err)
-  }
+	if err := http.ListenAndServe(":"+port, nil); err != nil {
+		panic(err)
+	}
 }
